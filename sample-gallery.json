@@ -1,0 +1,217 @@
+{
+    "$schema": "https://raw.githubusercontent.com/michaeljqzq/edge-sample-gallery/master/sample-gallery-schema.json",
+    "devices": [
+      {
+        "id": "rasp_pi_3",
+        "name": "Raspberry Pi 3"
+      },
+      {
+        "id": "devkit",
+        "name": "MXChip DevKit"
+      },
+      {
+        "id": "x64_device",
+        "name": "X64 Device"
+      }
+    ],
+    "platforms": [
+      "amd64",
+      "windows-amd64",
+      "arm32v7"
+    ],
+    "samples": [
+        {
+            "name": "Custom Vision",
+            "project_name": "custom_vision",
+            "description": "Custom Vision is an image classifier that is trained in the cloud with your own images.",
+            "url": "Azure-Samples/Custom-vision-service-iot-edge-raspberry-pi",
+            "image": "https://github.com/michaeljqzq/edge-sample-gallery/raw/master/images/custom-vision.png",
+            "tutorial": "https://github.com/Azure-Samples/Custom-vision-service-iot-edge-raspberry-pi/blob/master/README.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "x64_device",
+                "platform": "amd64"
+              },
+              {
+                "deviceId": "rasp_pi_3",
+                "platform": "arm32v7"
+              }
+            ],
+            "featured": false
+        },
+        {
+            "name": "Get Started",
+            "project_name": "devkit_getstarted",
+            "description": "Send sensor data from DevKit to Azure IoTHub.",
+            "url": "https://github.com/IoTDevEnvExamples/DevKitGetStarted/archive/master.zip",
+            "image": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/gallery/gallery-image/projects-devkit-get-started-th.jpg",
+            "tutorial": "https://github.com/Microsoft/vscode-iot-workbench/blob/master/docs/iot-devkit/devkit-get-started.md",
+            "difficulty": "easy",
+            "supportDevices": [
+              {
+                "deviceId": "devkit",
+                "platform": "arm32v7"
+              }
+            ]
+        },
+        {
+            "name": "Firmware OTA",
+            "project_name": "firmware_ota",
+            "description": "Use IoT Hub to perform firmware OTA update for DevKit.",
+            "url": "https://github.com/IoTDevEnvExamples/DevKitFirmwareOTA/archive/master.zip",
+            "image": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/gallery/gallery-image/projects-OTA-firmware-update-th.jpg",
+            "tutorial": "https://github.com/Microsoft/vscode-iot-workbench/blob/master/docs/iot-devkit/devkit-ota.md",
+            "difficulty": "easy",
+            "supportDevices": [
+              {
+                "deviceId": "devkit",
+                "platform": "arm32v7"
+              }
+            ]
+        },
+        {
+            "name": "Remote Monitoring",
+            "project_name": "devkit_remotemonitoring",
+            "description": "Send status of sensors on DevKit to Azure IoT Suite for monitoring.",
+            "url": "https://github.com/IoTDevEnvExamples/DevKitRemoteMonitoringV2/archive/master.zip",
+            "image": "https://microsoft.github.io/azure-iot-developer-kit/assets/images/projects-remote-monitoring-th.jpg",
+            "tutorial": "https://github.com/Microsoft/vscode-iot-workbench/blob/master/docs/iot-devkit/devkit_remote_monitoringv2.md",
+            "difficulty": "easy",
+            "supportDevices": [
+              {
+                "deviceId": "devkit",
+                "platform": "arm32v7"
+              }
+            ]
+        },
+        {
+            "name": "DevKit State",
+            "project_name": "devkit_state",
+            "description": "Monitor DevKit states and control the user LED with Azure IoT Hub device twins.",
+            "url": "https://github.com/IoTDevEnvExamples/DevKitState/archive/master.zip",
+            "image": "https://raw.githubusercontent.com/VSChina/azureiotdevkit_tools/gallery/gallery-image/projects-devKit-state-th.jpg",
+            "tutorial": "https://github.com/Microsoft/vscode-iot-workbench/blob/master/docs/iot-devkit/devkit-state.md",
+            "difficulty": "easy",
+            "supportDevices": [
+              {
+                "deviceId": "devkit",
+                "platform": "arm32v7"
+              }
+            ]
+        },
+        {
+            "name": "DevKit Translator",
+            "project_name": "devkit_translator",
+            "description": "Turn DevKit as a translator by using Bing Speech Translator service.",
+            "url": "https://github.com/IoTDevEnvExamples/DevKitTranslator/archive/master.zip",
+            "image": "https://microsoft.github.io/azure-iot-developer-kit/assets/images/projects-devkit-translator-th.jpg",
+            "tutorial": "https://github.com/Microsoft/vscode-iot-workbench/blob/master/docs/iot-devkit/devkit-translator.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "devkit",
+                "platform": "arm32v7"
+              }
+            ]
+        },
+        {
+            "name": "MQTT Client",
+            "project_name": "devkit_mqttclient",
+            "description": "Use DevKit as a client to send messages to MQTT server.",
+            "url": "https://github.com/IoTDevEnvExamples/DevKitMQTTClient/archive/master.zip",
+            "image": "https://microsoft.github.io/azure-iot-developer-kit/assets/images/projects-mqtt-helloworld-th.jpg",
+            "tutorial": "https://github.com/Microsoft/vscode-iot-workbench/blob/master/docs/iot-devkit/devkit-mqtt-client.md",
+            "difficulty": "easy",
+            "supportDevices": [
+              {
+                "deviceId": "devkit",
+                "platform": "arm32v7"
+              }
+            ]
+        },
+        {
+            "name": "Shake, Shake for a Tweet",
+            "project_name": "devkit_shakeshake",
+            "description": "Use the motion sensor to detect shaking and  find a random tweet with a #hashtag.",
+            "url": "https://github.com/IoTDevEnvExamples/DevKitShakeShake/archive/master.zip",
+            "image": "https://microsoft.github.io/azure-iot-developer-kit/assets/images/projects-shake-shake-th.jpg",
+            "tutorial": "https://github.com/Microsoft/vscode-iot-workbench/blob/master/docs/iot-devkit/devkit-shakeshake.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "devkit",
+                "platform": "arm32v7"
+              }
+            ]
+        },
+        {
+            "name": "Door Monitor",
+            "project_name": "devkit_doormonitor",
+            "description": "Use magnetic sensor to detect the change of magnetic field, and send notifications.",
+            "url": "https://github.com/IoTDevEnvExamples/DevKitDoorMonitor/archive/master.zip",
+            "image": "https://microsoft.github.io/azure-iot-developer-kit/assets/images/projects-door-monitor-th.jpg",
+            "tutorial": "https://github.com/Microsoft/vscode-iot-workbench/blob/master/docs/iot-devkit/devkit_door_monitor.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "devkit",
+                "platform": "arm32v7"
+              }
+            ]
+        }
+    ],
+    "aside": [
+        {
+            "type": "links",
+            "title": "Quick Links",
+            "items": [
+                {
+                    "text": "About Azure IoT Edge",
+                    "url": "https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge"
+                },
+                {
+                    "text": "Documentation",
+                    "url": "https://github.com/Microsoft/vscode-azure-iot-edge#azure-iot-edge-for-visual-studio-code"
+                },
+                {
+                    "text": "Report Issue",
+                    "url": "https://github.com/Microsoft/vscode-azure-iot-edge/issues/new"
+                }
+            ]
+        },
+        {
+            "type": "table",
+            "title": "Info",
+            "rows": [
+                [
+                    {
+                        "text": "Version"
+                    },
+                    {
+                        "text": "1.8.0",
+                        "url": "https://github.com/Microsoft/vscode-azure-iot-edge/releases"
+                    }
+                ],
+                [
+                    {
+                        "text": "Last updated"
+                    },
+                    {
+                        "text": "January 9, 2019"
+                    }
+                ]
+            ]
+        },
+        {
+            "type": "badge",
+            "items": [
+                {
+                    "icon": "github",
+                    "text": "GitHub",
+                    "url": "https://github.com/Microsoft/vscode-azure-iot-edge"
+                }
+            ]
+        }
+    ]
+}

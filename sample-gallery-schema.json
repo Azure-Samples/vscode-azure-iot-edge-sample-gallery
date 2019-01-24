@@ -1,0 +1,306 @@
+{
+  "id": "https://raw.githubusercontent.com/michaeljqzq/edge-sample-gallery/master/sample-gallery-schema.json",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "definitions": {
+    "sample": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the sample"
+        },
+        "project_name": {
+          "type": "string",
+          "pattern": "^[a-z0-9_]+$",
+          "description": "Default folder name of the sample"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of the sample"
+        },
+        "url": {
+          "type": "string",
+          "description": "Github URI of the sample"
+        },
+        "image": {
+          "type": "string",
+          "format": "uri",
+          "description": "Thumbnail of the sample"
+        },
+        "tutorial": {
+          "type": "string",
+          "format": "uri",
+          "description": "Tutorial document URI of the sample"
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": [
+            "easy",
+            "medium",
+            "hard"
+          ]
+        },
+        "supportDevices": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Support devices list of the sample",
+          "items": {
+            "type": "object",
+            "properties": {
+              "deviceId": {
+                "type": "string",
+                "description": "The unique ID of the device"
+              },
+              "platform": {
+                "$ref": "#/definitions/platform"
+              }
+            },
+            "required": [
+              "deviceId",
+              "platform"
+            ]
+          }
+        }
+      },
+      "required": [
+        "name",
+        "url",
+        "supportDevices"
+      ]
+    },
+    "device": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Display name of the device"
+        },
+        "id": {
+          "type": "string",
+          "description": "The unique ID of the device"
+        }
+      },
+      "required": [
+        "name",
+        "id"
+      ]
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "amd64",
+        "windows-amd64",
+        "arm32v7"
+      ],
+      "description": "The value of platform, will be mapped to IoT Edge solution platform settings"
+    },
+    "aside_link": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "links"
+          ],
+          "description": "Aside type"
+        },
+        "title": {
+          "type": "string",
+          "description": "Aside title"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "description": "Text of the link"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "Link URL"
+              }
+            },
+            "required": [
+              "text",
+              "url"
+            ]
+          }
+        }
+      },
+      "required": [
+        "type",
+        "items"
+      ]
+    },
+    "aside_feed": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "feed"
+          ],
+          "description": "Aside type"
+        },
+        "title": {
+          "type": "string",
+          "description": "Aside title"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Feed URL"
+        }
+      },
+      "required": [
+        "type",
+        "url"
+      ]
+    },
+    "aside_table": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "table"
+          ],
+          "description": "Aside type"
+        },
+        "title": {
+          "type": "string",
+          "description": "Aside title"
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "Text"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Link URL"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          }
+        }
+      },
+      "required": [
+        "type",
+        "rows"
+      ]
+    },
+    "aside_badge": {
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "badge"
+          ],
+          "description": "Aside type"
+        },
+        "title": {
+          "type": "string",
+          "description": "Aside title"
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "type": "string",
+                "enum": [
+                  "github",
+                  "feed"
+                ],
+                "description": "Icon name"
+              },
+              "text": {
+                "type": "string",
+                "description": "Text of the badge"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "description": "Link URL"
+              }
+            },
+            "required": [
+              "icon"
+            ]
+          }
+        }
+      },
+      "required": [
+        "type",
+        "items"
+      ]
+    }
+  },
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri",
+      "description": "JSON schema reference"
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/sample"
+      }
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/device"
+      }
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/platform"
+      }
+    },
+    "aside": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "$ref": "#/definitions/aside_link"
+          },
+          {
+            "$ref": "#/definitions/aside_feed"
+          },
+          {
+            "$ref": "#/definitions/aside_table"
+          },
+          {
+            "$ref": "#/definitions/aside_badge"
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "$schema",
+    "samples",
+    "devices",
+    "platforms"
+  ]
+}
