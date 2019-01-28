@@ -10,8 +10,12 @@
         "name": "MXChip DevKit"
       },
       {
-        "id": "x64_device",
-        "name": "X64 Device"
+        "id": "linux-amd64",
+        "name": "Linux-X64 Device"
+      },
+      {
+        "id": "vision-ai-kit"
+        "name": "Vision AI Development Kit"
       }
     ],
     "platforms": [
@@ -35,6 +39,22 @@
               },
               {
                 "deviceId": "rasp_pi_3",
+                "platform": "arm32v7"
+              }
+            ],
+            "featured": false
+        },
+        {
+            "name": "Machine Learning ImageNet",
+            "project_name": "ImageNet",
+            "description": "A Vision sample with Machine Learing and ImageNet running on Vision AI Developer Kit",
+            "url": "Microsoft/vision-ai-developer-kit",
+            "image": "https://developer.qualcomm.com/sites/default/files/attachments/qdn-348_1.png",
+            "tutorial": "https://github.com/Azure-Samples/Custom-vision-service-iot-edge-raspberry-pi/blob/master/README.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "vision-ai-kit",
                 "platform": "arm32v7"
               }
             ],
