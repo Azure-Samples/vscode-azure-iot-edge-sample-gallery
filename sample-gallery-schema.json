@@ -23,6 +23,10 @@
           "type": "string",
           "description": "Github URI of the sample"
         },
+        "issuesUrl": {
+         "type": "string",
+          "description": "Github issues URI of the sample"
+        },
         "image": {
           "type": "string",
           "format": "uri",
