@@ -12,6 +12,10 @@
       {
         "id": "x64_device",
         "name": "X64 Device"
+      },
+      {
+        "id": "vai_dekit",
+        "name": "Vision AI Developer kit"
       }
     ],
     "platforms": [
@@ -36,6 +40,23 @@
               },
               {
                 "deviceId": "rasp_pi_3",
+                "platform": "arm32v7"
+              }
+            ],
+            "featured": false
+        },
+        {
+            "name": "Vision AI Developer Kit",
+            "project_name": "vision-ai-developer-kit",
+            "description": "Use the Vision AI Developer kit (VAI DevKit) to develop Neural Network models which can be deployed to the VAI DevKit reference hardware.",
+            "url": "Microsoft/vision-ai-developer-kit",
+            "issuesUrl": "https://github.com/Microsoft/vision-ai-developer-kit/issues",
+            "image": "https://github.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/blob/master/images/vision-ai-developer-kit.jpg",
+            "tutorial": "https://github.com/Microsoft/vision-ai-developer-kit/blob/master/sample-solutions/sample-solution-1/README.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "vai_dekit",
                 "platform": "arm32v7"
               }
             ],
