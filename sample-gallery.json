@@ -70,7 +70,7 @@
                         "text": "Version"
                     },
                     {
-                        "text": "1.8.0",
+                        "text": "1.10.0",
                         "url": "https://github.com/Microsoft/vscode-azure-iot-edge/releases"
                     }
                 ],
@@ -79,7 +79,7 @@
                         "text": "Last updated"
                     },
                     {
-                        "text": "January 9, 2019"
+                        "text": "February 19, 2019"
                     }
                 ]
             ]
