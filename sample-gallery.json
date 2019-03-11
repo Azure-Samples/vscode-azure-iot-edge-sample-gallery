@@ -52,7 +52,7 @@
             "url": "Microsoft/vision-ai-developer-kit",
             "issuesUrl": "https://github.com/Microsoft/vision-ai-developer-kit/issues",
             "image": "https://raw.githubusercontent.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/master/images/vision-ai-developer-kit.jpg",
-            "tutorial": "https://github.com/Microsoft/vision-ai-developer-kit/blob/master/sample-solutions/sample-solution-1/README.md",
+            "tutorial": "https://github.com/Microsoft/vision-ai-developer-kit/blob/master/README.md",
             "difficulty": "medium",
             "supportDevices": [
               {
