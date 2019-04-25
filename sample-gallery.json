@@ -57,7 +57,7 @@
               }
             ],
             "featured": false
-        }
+        },
         {
             "name": "Module Testing Loop",
             "project_name": "e2e_testing_loop",
