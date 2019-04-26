@@ -40,6 +40,40 @@
               }
             ],
             "featured": false
+        },
+        {
+            "name": "Blob Storage",
+            "project_name": "blob_storage_sample",
+            "description": "Simple sample showing how to use local blob storage with Azure IoT Edge.",
+            "url": "Azure-Samples/azure-iotedge-blobstorage-sample",
+            "issuesUrl": "https://github.com/Azure-Samples/azure-iotedge-blobstorage-sample/issues",
+            "image": "https://github.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/raw/master/images/blob-storage.png",
+            "tutorial": "https://github.com/Azure-Samples/azure-iotedge-blobstorage-sample/blob/master/README.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "x64_device",
+                "platform": "amd64"
+              }
+            ],
+            "featured": false
+        },
+        {
+            "name": "Module Testing Loop",
+            "project_name": "e2e_testing_loop",
+            "description": "A sample solution for testing an Azure IoT Edge pipeline with Azure Functions and Application Insights",
+            "url": "Azure-Samples/iotedge-end2end-messageflow",
+            "issuesUrl": "https://github.com/Azure-Samples/iotedge-end2end-messageflow/issues",
+            "image": "https://github.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/raw/master/images/end-to-end-testing-solution.png",
+            "tutorial": "https://github.com/Azure-Samples/iotedge-end2end-messageflow/blob/master/README.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "x64_device",
+                "platform": "amd64"
+              }
+            ],
+            "featured": false
         }
     ],
     "aside": [
