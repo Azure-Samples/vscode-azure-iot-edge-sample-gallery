@@ -51,13 +51,47 @@
             "description": "Use the Vision AI Developer kit (VAI DevKit) to develop Neural Network models which can be deployed to the VAI DevKit reference hardware.",
             "url": "Microsoft/vision-ai-developer-kit",
             "issuesUrl": "https://github.com/Microsoft/vision-ai-developer-kit/issues",
-            "image": "https://raw.githubusercontent.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/master/images/vision-ai-developer-kit.jpg",
+            "image": "https://github.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/raw/master/images/vision-ai-developer-kit.jpg",
             "tutorial": "https://github.com/Microsoft/vision-ai-developer-kit/blob/master/README.md",
             "difficulty": "medium",
             "supportDevices": [
               {
                 "deviceId": "vai_dekit",
                 "platform": "arm32v7"
+              }
+            ],
+            "featured": false
+          },
+          {
+            "name": "Blob Storage",
+            "project_name": "blob_storage_sample",
+            "description": "Simple sample showing how to use local blob storage with Azure IoT Edge.",
+            "url": "Azure-Samples/azure-iotedge-blobstorage-sample",
+            "issuesUrl": "https://github.com/Azure-Samples/azure-iotedge-blobstorage-sample/issues",
+            "image": "https://github.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/raw/master/images/blob-storage.png",
+            "tutorial": "https://github.com/Azure-Samples/azure-iotedge-blobstorage-sample/blob/master/README.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "x64_device",
+                "platform": "amd64"
+              }
+            ],
+            "featured": false
+        },
+        {
+            "name": "Module Testing Loop",
+            "project_name": "e2e_testing_loop",
+            "description": "A sample solution for testing an Azure IoT Edge pipeline with Azure Functions and Application Insights",
+            "url": "Azure-Samples/iotedge-end2end-messageflow",
+            "issuesUrl": "https://github.com/Azure-Samples/iotedge-end2end-messageflow/issues",
+            "image": "https://github.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/raw/master/images/end-to-end-testing-solution.png",
+            "tutorial": "https://github.com/Azure-Samples/iotedge-end2end-messageflow/blob/master/README.md",
+            "difficulty": "medium",
+            "supportDevices": [
+              {
+                "deviceId": "x64_device",
+                "platform": "amd64"
               }
             ],
             "featured": false
@@ -91,7 +125,7 @@
                         "text": "Version"
                     },
                     {
-                        "text": "1.8.0",
+                        "text": "1.10.0",
                         "url": "https://github.com/Microsoft/vscode-azure-iot-edge/releases"
                     }
                 ],
@@ -100,7 +134,7 @@
                         "text": "Last updated"
                     },
                     {
-                        "text": "January 9, 2019"
+                        "text": "February 19, 2019"
                     }
                 ]
             ]
