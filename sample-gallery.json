@@ -63,7 +63,7 @@
             "project_name": "e2e_testing_loop",
             "description": "A sample solution for testing an Azure IoT Edge pipeline with Azure Functions and Application Insights",
             "url": "Azure-Samples/iotedge-end2end-messageflow",
-            "issuesUrl": "https://github.com/Azure-Samples/Custom-vision-service-iot-edge-raspberry-pi/issues",
+            "issuesUrl": "https://github.com/Azure-Samples/iotedge-end2end-messageflow/issues",
             "image": "https://github.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/raw/master/images/end-to-end-testing-solution.png",
             "tutorial": "https://github.com/Azure-Samples/iotedge-end2end-messageflow/blob/master/README.md",
             "difficulty": "medium",
