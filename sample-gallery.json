@@ -95,6 +95,23 @@
             }
           ],
           "featured": false
+        },
+        {
+          "name": "Azure Event Grid on IoT Edge",
+          "project_name": "azure-iot-edge-event-grid-sample",
+          "description": "A quick-start sample that demonstrates how to use publish/subscriber messaging pattern on Azure IoT Edge with Event Grid.",
+          "url": "Azure-Samples/azure-iot-edge-event-grid-sample",
+          "issuesUrl": "https://github.com/Azure-Samples/azure-iot-edge-event-grid-sample/issues",
+          "image": "https://github.com/Azure-Samples/vscode-azure-iot-edge-sample-gallery/raw/master/images/event-grid-on-iot-edge.png",
+          "tutorial": "https://github.com/Azure-Samples/azure-iot-edge-event-grid-sample/blob/master/README.md",
+          "difficulty": "medium",
+          "supportDevices": [
+             {
+               "deviceId": "x64_device",
+               "platform": "amd64"
+             }
+          ],
+          "featured": false
         }
     ],
     "aside": [
