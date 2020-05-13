@@ -113,58 +113,5 @@
           ],
           "featured": false
         }
-    ],
-    "aside": [
-        {
-            "type": "links",
-            "title": "Quick Links",
-            "items": [
-                {
-                    "text": "About Azure IoT Edge",
-                    "url": "https://docs.microsoft.com/en-us/azure/iot-edge/about-iot-edge"
-                },
-                {
-                    "text": "Documentation",
-                    "url": "https://github.com/Microsoft/vscode-azure-iot-edge#azure-iot-edge-for-visual-studio-code"
-                },
-                {
-                    "text": "Report Issue",
-                    "url": "https://github.com/Microsoft/vscode-azure-iot-edge/issues/new"
-                }
-            ]
-        },
-        {
-            "type": "table",
-            "title": "Info",
-            "rows": [
-                [
-                    {
-                        "text": "Version"
-                    },
-                    {
-                        "text": "1.10.0",
-                        "url": "https://github.com/Microsoft/vscode-azure-iot-edge/releases"
-                    }
-                ],
-                [
-                    {
-                        "text": "Last updated"
-                    },
-                    {
-                        "text": "February 19, 2019"
-                    }
-                ]
-            ]
-        },
-        {
-            "type": "badge",
-            "items": [
-                {
-                    "icon": "github",
-                    "text": "GitHub",
-                    "url": "https://github.com/Microsoft/vscode-azure-iot-edge"
-                }
-            ]
-        }
     ]
 }
